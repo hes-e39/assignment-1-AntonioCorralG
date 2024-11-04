@@ -35,7 +35,7 @@ const Stopwatch = () => {
       <StyledButtonContainer>
         <Button
           type={isRunning ? "pause" : "start"}
-          height={undefined}
+          height={75}
           onClick={() => setIsRunning((prev) => !prev)}
           width={200}
         >
@@ -48,7 +48,7 @@ const Stopwatch = () => {
         <SmallButtonContainer>
           <Button
             height={60}
-            type=""
+            type="submit"
             width={70}
             onClick={() => {
               setIsRunning(false);

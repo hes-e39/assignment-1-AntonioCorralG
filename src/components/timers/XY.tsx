@@ -98,7 +98,7 @@ const XY = () => {
       <StyledButtonContainer>
         <Button
           type={isRunning ? "pause" : "start"}
-          height={undefined}
+          height={75}
           onClick={handleStart}
           width={200}
         >

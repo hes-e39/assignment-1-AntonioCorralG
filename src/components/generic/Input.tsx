@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-const StyledInput = styled.input`
+interface Props {
+  type: string;
+  height: number;
+  width: number;
+}
+
+const StyledInput = styled.input<Props>`
   type: ${(props) => {
     return props.type;
   }};
@@ -19,7 +25,15 @@ const StyledInput = styled.input`
   cursor: text;
 `;
 
-const Input = ({ height, width, type }) => {
+const Input = ({
+  height,
+  width,
+  type,
+}: {
+  height: number;
+  width: number;
+  type: string;
+}) => {
   return <StyledInput height={height} width={width} type={type} />;
 };
 

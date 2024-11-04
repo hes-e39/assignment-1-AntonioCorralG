@@ -108,7 +108,7 @@ const Countdown = () => {
       <StyledButtonContainer>
         <Button
           type={isRunning ? "pause" : "start"}
-          height={undefined}
+          height={75}
           onClick={handleStart}
           width={200}
         >
@@ -120,7 +120,7 @@ const Countdown = () => {
         </Button>
         <SmallButtonContainer>
           <Button
-            height={60}
+            height={50}
             type={"submit"}
             width={70}
             onClick={() => {
@@ -137,7 +137,7 @@ const Countdown = () => {
           </Button>
           <Button
             type="reset"
-            height={60}
+            height={50}
             width={70}
             onClick={() => {
               clearInterval(intervalRef.current);

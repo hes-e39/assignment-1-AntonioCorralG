@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-const StyledButton = styled.button`
+interface Props {
+  type: "button" | "submit" | "reset" | "start" | "pause";
+  height: number;
+  width: number;
+}
+
+const StyledButton = styled.button<Props>`
   background-color: ${(p) => {
     if (p.type === "start") {
       return "#32a852";
@@ -36,9 +42,9 @@ const Button = ({
   onClick,
 }: {
   children: React.ReactNode;
-  type: string;
-  height: number | undefined;
-  width: number | string;
+  type: "button" | "submit" | "reset" | "start" | "pause";
+  height: number;
+  width: number;
   onClick: () => void;
 }) => {
   return (
