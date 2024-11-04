@@ -9,21 +9,22 @@ interface Props {
 const StyledButton = styled.button<Props>`
   background-color: ${(p) => {
     if (p.type === "start") {
-      return "#32a852";
+      return "#3b89a8";
     } else if (p.type === "pause") {
-      return "#d4c57b";
+      return "#DBD225";
     } else if (p.type === "reset") {
-      return "#d4847b";
+      return "#864451";
     } else {
-      return "#7b8bd4";
+      return "#3E535C";
     }
   }};
   height: ${(props) => {
     return props.height;
   }}px;
+  border: none;
   border-radius: 10px;
   &:hover {
-    background-color: #c2c5d1;
+    background-color: #db2549;
   }
   width: ${(props) => {
     return props.width;
@@ -32,6 +33,7 @@ const StyledButton = styled.button<Props>`
   margin: 0.25rem;
   cursor: pointer;
   font-weight: 700;
+  color: #b8bebf;
 `;
 
 const Button = ({

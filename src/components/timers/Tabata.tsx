@@ -33,9 +33,9 @@ const Tabata = () => {
     )
   );
 
-  const roundOptions = Array.from({ length: 10 }, (_, i) => i).map((round) => (
+  const roundOptions = Array.from({ length: 11 }, (_, i) => i).map((round) => (
     <option key={round} value={round}>
-      {round}
+      {round + 1}
     </option>
   ));
 
@@ -168,7 +168,7 @@ const Tabata = () => {
           <FontAwesomeIcon
             icon={isRunning ? faPause : faPlay}
             size="3x"
-            color="#626363"
+            color={isRunning ? "#3E535C" : "#b8bebf"}
           />
         </Button>
         <SmallButtonContainer>

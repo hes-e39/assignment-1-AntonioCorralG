@@ -115,7 +115,7 @@ const Countdown = () => {
           <FontAwesomeIcon
             icon={isRunning ? faPause : faPlay}
             size="3x"
-            color="#626363"
+            color={isRunning ? "#3E535C" : "#b8bebf"}
           />
         </Button>
         <SmallButtonContainer>

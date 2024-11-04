@@ -42,7 +42,7 @@ const Stopwatch = () => {
           <FontAwesomeIcon
             icon={isRunning ? faPause : faPlay}
             size="3x"
-            color="#626363"
+            color={isRunning ? "#3E535C" : "#b8bebf"}
           />
         </Button>
         <SmallButtonContainer>
@@ -67,7 +67,6 @@ const Stopwatch = () => {
               setStopWatchTimer(0);
             }}
           >
-            {/* reset the timer */}
             Reset
           </Button>
         </SmallButtonContainer>
