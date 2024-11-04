@@ -29,14 +29,16 @@ const TimersView = () => {
   ];
 
   return (
-    <Timers>
-      {timers.map((timer) => (
-        <Timer key={`timer-${timer.title}`}>
-          <TimerTitle>{timer.title}</TimerTitle>
-          {timer.C}
-        </Timer>
-      ))}
-    </Timers>
+    <>
+      <Timers>
+        {timers.map((timer) => (
+          <Timer key={`timer-${timer.title}`}>
+            <TimerTitle>{timer.title}</TimerTitle>
+            {timer.C}
+          </Timer>
+        ))}
+      </Timers>
+    </>
   );
 };
 
